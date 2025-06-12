@@ -1,0 +1,132 @@
+.diferenciais{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.texto1{
+    font-family: 'Poppins';
+    font-size: 35px;
+    color: #004456;
+    font-weight: 500;
+}
+.destaque{
+    font-weight: 800;
+}
+.cards{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card1{
+    width: 22%;
+    height: 400px;
+    background-color: #E46424;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.card1:hover {
+  transform: translateY(-25px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.imagem{
+    width: 110px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.card1 img{
+    width: 100%;
+    height: auto;
+}
+.card1 h2{
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: #FFF3D5;
+}
+.card1 p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #FFF3D5;
+}
+
+
+.card2{
+    width: 22%;
+    height: 400px;
+    background-color: #004456;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+.card2:hover {
+  transform: translateY(-25px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.imagem2{
+    width: 110px;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.card2 img{
+    width: 85%;
+    height: auto;
+}
+.card2 h2{
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: #FFF3D5;
+}
+.card2 p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #FFF3D5;
+}
+
+
+.card3{
+    width: 22%;
+    height: 400px;
+    background-color: #128A83;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+.card3:hover {
+  transform: translateY(-25px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.card3 img{
+    width: 100%;
+    height: auto;
+}
+.card3 h2{
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: #FFF3D5;
+}
+.card3 p{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #FFF3D5;
+}

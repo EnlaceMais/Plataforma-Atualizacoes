@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9EA; /* Cor do fundo da scroll */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8C9A5; /* Cor do "botão" da scroll */
+  border-radius: 10px;
+  border: 2px solid #FFF9EA; /* Cria um espaço entre o polegar e a borda */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8A47C; /* Cor quando passa o mouse por cima */
+}
+
+main{
+  width: 100%;
+  background-color: #FFF3D5;
+  height: auto;
+}

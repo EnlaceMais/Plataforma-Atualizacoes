@@ -1,0 +1,175 @@
+.menu{
+    width: 30%;
+    height: calc(100vh - 100px);
+    background-color: #FFF9EA;
+    margin-top: var(--header-height);
+    left: 0;
+    z-index: 999;
+    position: fixed;
+}
+
+
+.usuario{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:15px;
+}
+.usuario img{
+    width: 80px;
+    height: 80px;
+}
+.nome{
+    font-family: 'Poppins';
+    font-size: 30px;
+    margin-right: 15px;
+    color: #004456;
+    font-weight: 600;
+}
+.linha{
+    width: 90%;
+    margin: auto;
+    height: 5px;
+    background-color: rgba(129, 199, 217, 0.5);
+    border-radius: 15px;
+}
+.navegacao {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15px;
+    overflow-y: scroll;
+}
+
+
+.navegar{
+    width: 85%;
+    height: 55px;
+    background-color: rgba(129, 199, 217, 0.5);
+    border-radius: 50px;
+    margin: auto;
+    transition: all .5s;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    color: #004456;
+
+}
+.navegar:hover{
+   transition: all .5s;
+    transform: scale(1.02);
+}
+.navegar img{
+    margin-left: 25px;
+}
+
+.perfil{
+    width: 35px;
+    height: auto;
+}
+.home{
+    width: 30px;
+    height: auto;
+}
+.grupo{
+    width: 45px;
+    height: auto;
+}
+.jogos{
+    width: 35px;
+    height: auto;
+}
+.calendario{
+    width: 35px;
+    height: auto;
+}
+.pesinho{
+    width: 35px;
+    height: auto;
+}
+.cupom{
+    width: 35px;
+    height: auto;
+}
+.medalha{
+    width: 35px;
+    height: auto;
+}
+.navegar p{
+    color: #004456;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    padding: 15px 20px 0 35px;
+}
+.navegar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.navegar p {
+  margin-left: 10px;
+  color: #004456;
+}
+
+/* Quando ativo */
+.ativo {
+  background-color: #004456;
+  color: #FFF9EA !important;
+}
+
+.ativo p {
+  color: white !important;
+}
+
+/* Deixa o ícone branco quando ativo */
+.iconeAtivo {
+  filter: brightness(0) invert(1);
+}
+/* Para o container específico */
+.scrollContainer {
+  max-height: 58vh;
+  overflow-y: scroll;
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+/* Esconde scrollbar padrão em WebKit */
+.scrollContainer::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+/* Scrollbar personalizada só no hover */
+.scrollContainer:hover::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+.scrollContainer:hover::-webkit-scrollbar-track {
+  background: #FFF9EA;
+  border-radius: 10px;
+}
+
+.scrollContainer:hover::-webkit-scrollbar-thumb {
+  background: #D8C9A5;
+  border-radius: 10px;
+  border: 2px solid #FFF9EA;
+}
+
+.scrollContainer:hover::-webkit-scrollbar-thumb:hover {
+  background: #B8A47C;
+}

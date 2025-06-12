@@ -1,0 +1,136 @@
+.banner3{
+    width: 100%;
+    height: 550px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seuTico{
+    width: 45%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.seuTico img{
+    width: 100%;
+    height: 110%;
+}
+.infos{
+    width: 45%;
+    height: 500px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.texto1{
+    font-family: 'Poppins';
+    color: #004456;
+    font-size: 38px;
+    font-weight: 500;
+}
+.texto2{
+    font-family: 'Poppins';
+    color: #004456;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.pontos{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.ponto1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #004456;
+    color: #FFF3D5;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.ponto1:hover {
+    transform: translateX(-35px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.ponto1 img{
+    width: 8%;
+    height: auto;
+}
+
+.ponto1 h3{
+    font-family: 'Poppins';
+    font-size: 19px;
+}
+
+.ponto2{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #004456;
+    color: #FFF3D5;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.ponto2:hover {
+    transform: translateX(-35px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.ponto2 img{
+    width: 9%;
+    height: auto;
+}
+
+.ponto2 h3{
+    font-family: 'Poppins';
+    font-size: 19px;
+}
+
+.ponto3{
+    display: flex;
+    flex-direction: row;
+    width: 57%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #004456;
+    color: #FFF3D5;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+}
+.ponto3:hover {
+    transform: translateX(-35px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.ponto3 img{
+    width: 12%;
+    height: auto;
+}
+
+.ponto3 h3{
+    font-family: 'Poppins';
+    font-size: 19px;
+}
