@@ -76,6 +76,8 @@
 .ponto1 h3{
     font-family: 'Poppins';
     font-size: 19px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .ponto2{
@@ -105,6 +107,8 @@
 .ponto2 h3{
     font-family: 'Poppins';
     font-size: 19px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .ponto3{
@@ -133,4 +137,6 @@
 .ponto3 h3{
     font-family: 'Poppins';
     font-size: 19px;
+    margin-top: 10px;
+    margin-right: 10px;
 }

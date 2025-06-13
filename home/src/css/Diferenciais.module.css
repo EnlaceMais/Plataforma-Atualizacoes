@@ -54,6 +54,7 @@
 .card1 h2{
     font-family: 'Poppins';
     font-size: 28px;
+    font-weight: 700;
     color: #FFF3D5;
 }
 .card1 p{
@@ -92,6 +93,7 @@
 .card2 h2{
     font-family: 'Poppins';
     font-size: 28px;
+    font-weight: 700;
     color: #FFF3D5;
 }
 .card2 p{
@@ -123,6 +125,7 @@
 .card3 h2{
     font-family: 'Poppins';
     font-size: 28px;
+    font-weight: 700;
     color: #FFF3D5;
 }
 .card3 p{

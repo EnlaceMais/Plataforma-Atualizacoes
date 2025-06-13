@@ -1,0 +1,212 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.videoFullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 243, 213, 0.7);
+  z-index: 2;
+}
+.content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.espaco {
+  width: 800px;
+  height: 580px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.cardContainer {
+  display: flex;
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF9EA;
+}
+.leftSide {
+  width: 50%;
+  background: linear-gradient(135deg, #004456, #0A8680);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  font-weight: 600;
+  border-radius: 50px 0 0 50px;
+  text-align: center;
+  transition: transform 0.7s ease;
+  position: relative;
+  z-index: 5;
+}
+.rightSide {
+  width: 50%;
+  background-color: #FFF9EA;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #004456;
+  font-weight: 700;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.7s ease;
+}
+
+.rightSide h3{
+  font-weight: 700;
+  font-size: 22px;
+}
+.rightPanelActive .leftSide {
+  transform: translateX(100%);
+  border-radius: 0 50px 50px 0;
+  text-align: center;
+}
+.rightPanelActive .rightSide {
+  transform: translateX(-100%);
+  border-radius: 50px 0 0 50px;
+}
+.createButton {
+  padding: 10px 50px;
+  border: 3px solid white;
+  border-radius: 999px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+  align-self: center;
+  transition: all 0.5s ease;
+}
+.rightPanelActive .createButton {
+  align-self: center;
+}
+.createButton:hover {
+  background: white;
+  color: #006d77;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 12px;
+}
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 68, 86, 0.15);
+  border-radius: 55px;
+  padding: 8px 15px;
+  width: 100%;
+  max-width: 300px;
+  gap: 10px;
+}
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 0.95rem;
+  color: #004456;
+  border-radius: 45px;
+  padding: 6px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+.icon {
+  font-size: 1.2rem;
+  color: #004456;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.forgotLink {
+  align-self: center;
+  font-size: 15px;
+  color: #004456;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.forgotLink:hover {
+  color: #004d4e;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 17px;
+}
+.loginButton {
+  padding: 10px 60px;
+  border-radius: 50px;
+  font-size: 19px;
+  margin-top: 15px;
+  border: none;
+  background-color: #003d40;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginButton:hover {
+  background-color: #00575a;
+}
+.leftSide h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.leftSide p {
+  font-size: 18px;
+}
+
+.input {
+  font-size: 15px;
+}
+.forgotLink {
+  font-size: 15px;
+}
+.forgotLink:hover {
+  font-size: 17px;
+}
+.createButton {
+  font-size: 20px;
+}
+.loginButton {
+  font-size: 19px;
+}

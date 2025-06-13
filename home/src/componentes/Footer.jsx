@@ -14,9 +14,9 @@ function Footer(){
                 </div>
                 <div className={Styles.linha}></div>
                 <div className={Styles.texto}>
-                    <a href='#'>•Contatos<br></br><br></br>
-                    •Sobre nós<br></br><br></br>
-                    •Termos de uso<br></br><br></br> </a>
+                    <a href='#'>• Contatos<br></br><br></br>
+                    • Sobre nós<br></br><br></br>
+                    • Termos de uso<br></br><br></br> </a>
                 </div>
                 <div className={Styles.redes}>
                     <a href='#' className={Styles.linkedin}>
