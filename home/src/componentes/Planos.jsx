@@ -1,5 +1,6 @@
 import Styles from '../css/Planos.module.css'
 import icone from '../imagem/icone_mao.png'
+import { Link } from 'react-router-dom';
 
 function Planos(){
 
@@ -30,7 +31,7 @@ function Planos(){
                     <h1 className={Styles.preco}>GRATUITO</h1>
                     <div className={`${Styles.overlay} ${Styles.bgBasico}`}>
                         <p className={Styles.fraseConvite}>Comece sua jornada com a gente!</p>
-                        <a href="#" className={Styles.linkOverlay}>Aproveitar agora</a>
+                        <Link to="/planos" className={Styles.linkOverlay}>Aproveitar agora</Link>
                     </div>
                 </div>
 
@@ -50,7 +51,7 @@ function Planos(){
                     <h1 className={Styles.preco}>R$ 39,90</h1>
                     <div className={`${Styles.overlay} ${Styles.bgPremium}`}>
                         <p className={Styles.fraseConvite}>Mais benefícios para sua rotina!</p>
-                        <a href="#" className={Styles.linkOverlay2}>Quero ser Premium</a>
+                        <Link to="/planos" className={Styles.linkOverlay2}>Quero ser Premium</Link>
                     </div>
                 </div>
 
@@ -71,7 +72,7 @@ function Planos(){
                     <h1 className={Styles.preco}>R$ 89,90</h1>
                     <div className={`${Styles.overlay} ${Styles.bgTotal}`}>
                         <p className={Styles.fraseConvite}>Conecte-se sem limites!</p>
-                        <a href="#" className={Styles.linkOverlay3}>Assinar agora</a>
+                        <Link to="/planos" className={Styles.linkOverlay3}>Assinar agora</Link>
                     </div>
                 </div>
             </section>
@@ -83,9 +84,9 @@ function Planos(){
             <h1 className={Styles.fraseFinal}> 
                 A <span className={Styles.destaque}>Enlace+</span> é o seu novo ponto de encontro: mais conexão, mais diversão e mais vida em cada clique.
             </h1>
-            <a href='#' className={Styles.botao}>
+            <Link to="/loggin" className={Styles.botao}>
                 Quero me conectar agora!
-            </a>
+            </Link>
         
         </section>
     )

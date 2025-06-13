@@ -3,13 +3,14 @@ import logo from '../imagem/logo_header.png'
 import aMais from '../imagem/a_mais.png'
 import aMenos from '../imagem/a_menos.png'
 import entrar from '../imagem/entrar.png'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
-            <a href='#' className={Styles.logo}>
+            <Link to="/" className={Styles.logo}>
                 <img src={logo} alt='logo' />
-            </a>
+            </Link>
             <nav className={Styles.navegacao}>
                 <button className={Styles.amenos}>
                     <img src={aMenos} alt='Diminuir fonte' />
@@ -17,9 +18,9 @@ function Header() {
                 <button className={Styles.amais}>
                     <img src={aMais} alt='Aumentar fonte' />
                 </button>
-                <a href='#' className={Styles.entrar}>
+                <Link to="/loggin" className={Styles.entrar}>
                     <img src={entrar} alt='Entrar' />
-                </a>
+                </Link>
             </nav>
         </header>
     )

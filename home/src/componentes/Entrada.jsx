@@ -1,5 +1,6 @@
 import Styles from '../css/Entrada.module.css'
 import foto from '../imagem/foto2.png'
+import { Link } from 'react-router-dom';
 
 function Entrada(){
 
@@ -14,7 +15,7 @@ function Entrada(){
                 <h1 className={Styles.texto2}>simples, seguro e feito para você.</h1>
                 <h4 className={Styles.texto3}>Para se sentir em casa, mesmo online.</h4>
                 <div className={Styles.botao}>
-                    <a href='#' className={Styles.botaoEntrar}>Entre e se conecte</a>
+                    <Link to="/loggin" className={Styles.botaoEntrar}>Entre e se conecte</Link>
                 </div>
                 <div className={Styles.convite}>
                     <p className={Styles.texto4}>Saiba mais</p>
