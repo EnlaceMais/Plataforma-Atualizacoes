@@ -7,6 +7,7 @@ import aMais from '../imagem/a_mais.png';
 import aMenos from '../imagem/a_menos.png';
 import chat from '../imagem/chat.png';
 import usuario from '../imagem/usuario.png';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
     const [buscaAtiva, setBuscaAtiva] = useState(false);
@@ -22,9 +23,9 @@ function Navbar() {
 
     return(
         <header className={Styles.header}>
-            <a href='#' className={Styles.logo}>
+            <Link to="/inicio" className={Styles.logo}>
                 <img src={logo} alt="logo" />
-            </a>
+            </Link>
 
             <section className={Styles.pesquisa}>
                 <div className={`${Styles.buscarBox} ${buscaAtiva ? Styles.ativar : ''}`}>
@@ -60,9 +61,9 @@ function Navbar() {
                 <a href='#' className={Styles.chat}>
                     <img src={chat} alt='chat'/>
                 </a>
-                <a href='#' className={Styles.usuario}>
+                <Link to="/perfil" className={Styles.usuario}>
                     <img src={usuario} alt='usuario'/>
-                </a>
+                </Link>
             </nav>
         </header>
     )

@@ -1,0 +1,278 @@
+.semana {
+    width: 100%;
+    height: auto;
+    margin-left: calc(100% - var(--menu-width));
+    margin-top: calc(17.9% - var(--header-height));
+    font-family: Poppins;
+}
+
+.carrosselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadro1 {
+    width: 85%;
+    height: 400px;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.indicadores {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.bolinha {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bolinha.ativa {
+    background-color: #007bff;
+}
+
+.quadro {
+    width: 85%;
+    height: 80px;
+    border-radius: 12px;
+    background-color: #ffe4a1;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.info3 {
+    width: 100%;
+    height: 80px;
+    background-color: #004456;
+    border-radius: 12px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info4 {
+    width: 100%;
+    height: 80px;
+    color: #FFF9EA;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -500px;
+}
+
+.info5 {
+    width: 100%;
+    height: 80px;
+    color: #FFF9EA;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -360px;
+}
+
+.semana1 {
+    width: 85%;
+    height: 1200px;
+    border-radius: 12px;
+    background-color: #FFF9EA;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo {
+    width: 85%;
+    margin: auto;
+    font-weight: bold;
+    color: #004456;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.info6,
+.info7,
+.info8 {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.textinho {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #004456;
+}
+
+.descricao {
+    width: 85%;
+    font-size: 25px;
+    margin: auto;
+    font-weight: bold;
+    color: #004456;
+}
+
+.b1 {
+    width: 50%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #004456;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+}
+
+/* ---------------- Responsivo: Tablet ---------------- */
+@media (max-width: 768px) {
+    .semana {
+        margin: 10px;
+        height: auto;
+    }
+
+    .quadro {
+        width: 100%;
+        height: auto;
+        min-height: 120px;
+        padding: 25px;
+    }
+
+    .info3 {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .info4,
+    .info5 {
+        height: auto;
+        margin-left: 0;
+        font-size: 28px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .semana1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .info6,
+    .info7,
+    .info8 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .textinho {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .descricao {
+        font-size: 22px;
+    }
+
+    .b1 {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}
+
+.rodape{
+    width: 100%;
+    height: 150px;
+    margin: 120px auto 0px;
+    border-top: #004456 solid 2.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+.rodape p{
+    font-size: 16px;
+    color: #004456;
+    font-weight: 600;
+}
+.links{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color:#004456;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.links a:hover{
+    text-decoration-line: underline;
+}
+
+/* ---------------- Responsivo: Celular pequeno ---------------- */
+@media (max-width: 480px) {
+    .quadro {
+        padding: 30px 20px;
+        min-height: 140px;
+    }
+
+    .info4,
+    .info5 {
+        font-size: 26px;
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .textinho {
+        font-size: 16px;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .b1 {
+        font-size: 18px;
+        height: 55px;
+        min-width: 200px;
+    }
+}

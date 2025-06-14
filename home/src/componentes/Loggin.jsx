@@ -4,10 +4,8 @@ import video from '../imagem/videofundo.mp4';
 import logo from '../imagem/logo_loggin.png';
 import Chatbot from './Chatbot'
 import { FaEnvelope, FaLock, FaUser } from 'react-icons/fa';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
-=======
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
+
 
 function Loggin() {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -79,17 +77,14 @@ function Loggin() {
                         className={Styles.input}
                       />
                     </div>
-<<<<<<< HEAD
+
                     <Link to="/inicio">
                     <button type="submit" className={Styles.loginButton}>
                       Cadastrar
                     </button>
                     </Link>
-=======
-                    <button type="submit" className={Styles.loginButton}>
-                      Cadastrar
-                    </button>
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
+
+
                   </>
                 ) : (
                   <>
@@ -114,15 +109,11 @@ function Loggin() {
                     <a href="/esqueci-senha" className={Styles.forgotLink}>
                       Esqueci minha senha
                     </a>
-<<<<<<< HEAD
+
                    <Link to="/inicio">
                    <button type="submit" className={Styles.loginButton}>Entrar </button>
                    </Link>
-=======
-                    <button type="submit" className={Styles.loginButton}>
-                      Entrar
-                    </button>
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
+
                   </>
                 )}
               </form>

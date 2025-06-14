@@ -74,23 +74,15 @@
   justify-content: center;
   gap: 16px;
   color: #004456;
-<<<<<<< HEAD
-  font-weight: 700;
-=======
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
   border-radius: 0 50px 50px 0;
   position: relative;
   z-index: 1;
   transition: transform 0.7s ease;
 }
-<<<<<<< HEAD
-
 .rightSide h3{
   font-weight: 700;
   font-size: 22px;
 }
-=======
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
 .rightPanelActive .leftSide {
   transform: translateX(100%);
   border-radius: 0 50px 50px 0;
@@ -194,10 +186,7 @@
 }
 .leftSide h2 {
   font-size: 30px;
-<<<<<<< HEAD
   font-weight: 700;
-=======
->>>>>>> 88214d85b6c6b5192ba9d0935592fc78a27bab97
 }
 
 .leftSide p {
