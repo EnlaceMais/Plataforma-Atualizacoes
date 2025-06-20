@@ -1,0 +1,728 @@
+.cards_meditacao {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-sizing: border-box;
+  width: 85%;
+  height: auto;
+}
+
+.card_base {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Alinha verticalmente */
+  gap: 20px;
+  background-color: #FFF9EA;
+  padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-height: 140px;
+  flex-wrap: nowrap; /* evita que quebre em outra linha */
+  transition: transform 0.2s ease;
+}
+.card_base:hover {
+  transform: translateY(-4px);
+}
+
+.conteudo {
+    display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start; /* Alinha os textos ao topo */
+}
+
+.card_texto {
+ display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left; /* Garante alinhamento à esquerda */
+}
+
+.titulo_medita {
+    color: #004456;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 27px;
+     display: flex;
+  flex-direction: column;
+  text-align: left; /* Garante alinhamento à esquerda */
+
+}
+
+.texto1 {
+  color: #004456;
+  font-weight: 500;
+   display: flex;
+  flex-direction: column;
+  text-align: left; /* Garante alinhamento à esquerda */
+  
+}
+
+.iniciar {
+  background-color: #004456;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+.iniciar:hover{
+   background-color: #00677d;
+}
+.escolhas {
+  width: 85%;
+  margin: 0 auto; 
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.teste {
+  width: 100%;
+  background-color: #FFF9EA;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.teste:hover {
+  transform: translateY(-5px);
+}
+
+.nome {
+  color: #004456;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 25px;
+  
+}
+
+.info {
+  color: #004456;
+  padding: 5px;
+  font-size: 18px;
+  /* font-weight: 500; */
+}
+
+ul, li {
+  color: #004456;
+  align-items: center;
+}
+
+.ouvir_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.ouvir {
+  background-color: #004456;
+  color: #FFF9EA;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.ouvir:hover {
+  background-color: #003344;
+}
+
+.card_ouvir {
+  background-color: #FFF9EA;
+  padding: 24px 16px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+  color: #004456;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.player {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.player audio {
+  width: 85%;
+  max-width: 500px;
+  height: 40px;
+}
+
+/* Gratidão */
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.opcoes_gratidao {
+  padding: 10px 16px;
+  border-radius: 16px;
+  background-color: #004456;
+  color: #FFF9EA;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.opcoes_gratidao:hover {
+  background-color: #003344;
+}
+
+.input_gratidao {
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.confirmacao {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  color: #004456;
+  text-align: center;
+}
+.botao_finalizar{
+  width:  80%;
+      padding: 12px;
+      margin-top: 40px;
+    background-color: #004456;
+     color: #FFF9EA;
+     font-weight: bold;
+}
+
+/* Botões */
+.finalizar,
+.voltar {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  color: #FFF9EA;
+  background-color: #004456;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finalizar:hover,
+.voltar:hover {
+  background-color: #003344;
+}
+.card_sentimento {
+  margin: 40px auto;
+  padding: 24px;
+  width: 85%;
+  background-color: #FFF9EA;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.card_emojis {
+  width: 85%;
+  max-width: 800px;
+ 
+}
+
+.grid_emojis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  width: 85%;
+  color: #004456;
+}
+
+.emoji_card {
+  background-color: #FFF9EA;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width:  85%;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emoji_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.emoji_card.selecionado {
+  border-color: #004456;
+  background-color: #e6f7f5;
+}
+
+.emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.resposta_animada {
+  width: 85%;
+  height: auto;
+  /* max-width: 700px; */
+   margin: 0;
+  background-color: #FFF9EA;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  animation: fadeInUp 0.7s ease-in-out;
+  box-shadow: 0 8px 16px rgba(50, 85, 155, 0.2);
+}
+
+.mensagem_sentimento,
+.mensagem_gratidao {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #004456;
+}
+
+.botao_voltar {
+  background-color: #004456;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.botao_voltar:hover {
+  background-color: #00333a;
+}
+
+/* Animação */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card_sentimento {
+    padding: 16px;
+    gap: 24px;
+  }
+.grid_emojis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  color: #004456;
+}
+
+  .resposta_animada {
+    width: 85%;
+  margin: 0; 
+    padding: 20px;
+  }
+
+  .mensagem_sentimento,
+  .mensagem_gratidao {
+    font-size: 16px;
+  }
+
+  .botao_voltar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .emoji {
+    font-size: 1.5rem;
+  }
+
+  .emoji_card {
+    padding: 16px;
+  }
+
+  .mensagem_sentimento,
+  .mensagem_gratidao {
+    font-size: 15px;
+  }
+   .grid_emojis {
+    grid-template-columns: 1fr; /* força uma coluna só */
+  }
+}
+
+.musical{
+    width: 85%;
+    height: auto;
+    border-radius: 50px;
+    background-color: #FFF9EA;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card_ouvir {
+  position: relative;
+  width: 85%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.imagem_gratidao{
+  width: 140px;
+    height: auto;
+    border-radius: 12px;
+    
+
+}
+.imagem_musical{
+    width: 140px;
+  height: auto;
+  border-radius: 12px;
+ 
+
+
+}
+.imagem_movimento {
+   width: 140px;
+    height: auto;
+  border-radius: 5px;
+  
+}
+.subtitulo {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  color: #004d40;
+}
+.sugestoesContainer {
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 1rem 0;
+   margin-top: 30px;
+}
+
+.miniCard {
+   width: calc(33.33% - 1rem); /* 3 por linha com gap */
+  height: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.miniCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 68, 86, 0.3);
+}
+
+.miniCard img {
+  width: 85%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card_texto {
+  color: #004456;
+  font-weight: 500;
+  text-align: center;
+}
+
+.miniCard h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004456;
+}
+
+.imagemMiniCard {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsivo: 2 por linha */
+@media (max-width: 768px) {
+  .miniCard {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Responsivo: 1 por linha */
+@media (max-width: 480px) {
+  .miniCard {
+    width: 100%;
+  }
+}
+
+/* Remove setas completamente */
+.setaEsquerda,
+.setaDireita {
+  display: none !important;
+}
+
+.botaoOuvir {
+  margin-top: 0.75rem;
+  background-color: #004456;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botaoOuvir:hover {
+  background-color: #007699;
+}
+
+
+/* Comentários */
+.comentarios {
+  background-color: rgb(255, 249, 234);
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.listaComentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comentario {
+   width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #004456;
+  box-shadow: 0 2px 8px rgba(0, 68, 86, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.comentario:hover {
+  box-shadow: 0 4px 12px rgba(0, 68, 86, 0.2);
+}
+
+.subtitulo_comentario{
+  color: #004456;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.texto_comentario{
+   font-style: italic;
+  margin-bottom: 0.25rem;
+  color: #004456;
+  font-weight: 500;
+}
+
+.comentario span {
+  font-size: 0.875rem;
+  color: #777;
+}
+.subtitulo_sugestao {
+  background-color: #FFF9EA;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: auto;
+  color: #004456;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.imagemMiniCard {
+  width: 85%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+/* Ajustes para telas até 768px (tablets e celulares maiores) */
+@media (max-width: 768px) {
+  .cards_meditacao,
+  .escolhas,
+  .botao_finalizar,
+  .grid_emojis,
+  .resposta_animada {
+    width: 90%;
+  }
+
+  .card_base {
+    flex-direction: column;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .card_texto {
+    gap: 6px;
+  }
+
+    .miniCard {
+    flex: 0 0 160px; /* Diminuí um pouco para evitar overflow */
+  }
+
+  .miniCard img,
+  .imagemMiniCard,
+  .imagem_gratidao,
+  .imagem_musical {
+    height: auto;
+    max-width: 85%;
+  }
+
+  .player,
+  audio {
+    height: 40px;
+  }
+
+  .iniciar,
+  .botao_finalizar,
+  .finalizar,
+  .opcoes_gratidao,
+  .botao_voltar,
+  .voltar {
+    width: 100% !important;
+  }
+
+  .texto1,
+  .card_texto,
+  .info,
+  .mensagem_sentimento,
+  .mensagem_gratidao {
+    font-size: 16px;
+  }
+
+  .subtitulo_sugestao,
+  .subtitulo_comentario {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+  .carrossel {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible; /* remove rolagem horizontal */
+    padding: 1rem 0;
+  }
+}
+
+/* Ajustes para telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .cards_meditacao,
+  .escolhas,
+  .botao_finalizar,
+  .grid_emojis,
+  .resposta_animada {
+    width: 85% !important;
+  }
+
+  .card_base {
+    padding: 12px;
+  }
+
+  .miniCard {
+    flex: 0 0 70%; /* menor que 85% para testar */
+  }
+
+  .titulo_medita {
+    font-size: 20px;
+  }
+
+  .iniciar,
+  .botao_finalizar,
+  .finalizar,
+  .opcoes_gratidao,
+  .botao_voltar,
+  .voltar {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .texto1,
+  .card_texto,
+  .info,
+  .mensagem_sentimento,
+  .mensagem_gratidao {
+    font-size: 14px;
+  }
+
+  .subtitulo_sugestao,
+  .subtitulo_comentario {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+

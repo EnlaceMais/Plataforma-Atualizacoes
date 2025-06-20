@@ -145,7 +145,7 @@
 }
 
 .amenos{
-    width: 70px;
+    width: 100px;
     height: 70px;
     border-radius: 50px;
     border: none;
@@ -156,7 +156,7 @@
     transform: scale(0.95);  
 }
 .amais{
-    width: 70px;
+    width: 100px;
     height: 70px;
     border-radius: 50px;
     border: none;   
@@ -201,3 +201,4 @@
     height: auto;
     
 }
+

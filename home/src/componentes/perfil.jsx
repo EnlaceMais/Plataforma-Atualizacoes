@@ -1,6 +1,7 @@
 import Styles from '../css/perfil.module.css'
 import Navbar from './navbar'
 import PerfilComponente from './perfilComponente'
+import Chatbot from './Chatbot'
 
 function Perfil() {
   
@@ -11,6 +12,7 @@ function Perfil() {
         <main>
             <section className={Styles.conteudo}>
                 <PerfilComponente/>
+                <Chatbot/>
             </section>
         </main>
     </>

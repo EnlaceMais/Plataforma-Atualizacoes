@@ -14,6 +14,8 @@ function Menu() {
     const location = useLocation();
     const path = location.pathname;
 
+    
+
     return (
         <section className={Styles.menu}>
             <div className={Styles.usuario}>
@@ -23,6 +25,7 @@ function Menu() {
             <div className={Styles.linha}></div>
 
             <div className={Styles.scrollContainer}>
+                <div class="menu-lateral" id="menuMobile">
                 <div className={Styles.navegacao}>
                     <Link
                         to="/perfil"
@@ -121,6 +124,8 @@ function Menu() {
                     </Link>
 
                 </div>
+                </div>
+                <button id="toggleMenu" class="botao-abrir">☰</button>
             </div>
         </section>
     );

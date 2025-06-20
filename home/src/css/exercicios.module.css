@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.exercicios{
+  width: 100%;
+  height: auto;
+  margin-left: calc(100% - var(--menu-width));
+  margin-top: calc(17.9% - var(--header-height));
+    font-family: "Poppins";
+}
+
+/* Botão padrão */
+button {
+  background: #FFF3D5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+
+
+/* Quadro 1 */
+.quadro1 {
+  position: relative;
+  width: 85%;
+  height: 118px;
+  border-radius: 20px;
+  background-color: #FFF9EA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px auto 0 auto;
+  overflow: visible;
+  padding: 0 20px; /* ajuda a dar respiro nas laterais em telas pequenas */
+}
+
+
+
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.texto1 {
+  color: #004456;
+  font-weight: bold;
+  font-size: 40px; /* reduzido para caber */
+  
+}
+
+.texto2 {
+  color: #004456;
+  font-size: 20px;
+  
+}
+
+.tico_regata {
+    position: absolute;
+  right: 100px;  /* Ajuste para “sair” um pouco da borda direita */
+  /* top: 2%; */
+  transform: translateY(-10%);
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  z-index: 10; /* Para ficar acima dos outros elementos */
+
+}
+
+/* Container dos cards maiores */
+.card_maior {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 85%;
+  height: auto;
+   margin: 40px auto 0 auto; /* top, right, bottom, left */
+  background-color: #FFF9EA;
+  border-radius: 24px;
+;
+}
+
+/* Títulos dos cards */
+.titulo1 {
+  color: #f9f9f9;
+  font-weight: bold;
+  font-size: 30px;
+  
+}
+
+.subtitulo1 {
+  color: #f9f9f9;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.subtitulo2 {
+  color: #f9f9f9;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.lista1, .lista {
+  color: #f0f0f0;
+  font-size: 15px;
+  padding: 2px;
+  font-weight: 600;
+}
+
+.titulo2 {
+  color: #f9f9f9;
+  font-size: 25px;
+  font-weight: bold;
+ margin-top: 20px;
+  
+}
+
+/* Cards */
+.card_sugestao {
+  padding: 20px;
+  background-color: #004456;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  width: 360px;
+  height: auto;
+  cursor: pointer;
+  
+}
+
+.card_atividades {
+  background-color: #004456;
+  border-radius: 10px;
+  width: 320px;
+  height: auto;
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Destaques */
+.destaque h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.destaque h3 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Lista de atividades */
+.lista_atividades {
+  font-size: 1.2rem;
+  list-style: none;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.destaque{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.lista-atividades li {
+  margin-bottom: 10px;
+
+}
+
+/* Abas */
+.abas {
+  width: 85%;
+  height: auto;
+  border-radius: 15px;
+  background-color: #FFF9EA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+   margin: 40px auto 20px auto; /* top, right, bottom, left */
+}
+
+.abas button {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.abas button:hover {
+  background-color: #FFF3D5;
+  transform: translateY(-2px);
+}
+
+.ativa {
+  background-color: #e6e3da;
+  box-shadow: 0 4px 4px rgba(0, 68, 86, 1);
+}
+
+.card_tipo {
+  color: #004456;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+/* Botão meditação */
+.botao_meditacao {
+  color: #004456;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Sugestão de vídeo */
+.sugestao_gif {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+  /* box-shadow: 0 1px 2px rgba(0,0,0,0.2); */
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .texto1 {
+    font-size: 50px;
+  }
+
+  .texto2 {
+    font-size: 36px;
+  }
+
+  .quadro1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    padding: 20px; /* espaçamento interno para evitar colar nas bordas */
+  }
+
+  .card_sugestao,
+  .card_atividades {
+    width: 100%;
+    max-width: 360px;
+    margin: 10px auto;
+  }
+
+  .abas {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .texto1 {
+    font-size: 36px;
+  }
+
+  .texto2 {
+    font-size: 24px;
+  }
+
+  .tico_regata {
+    width: 180px;
+    height: auto;
+  }
+
+  .card_tipo {
+    font-size: 16px;
+  }
+
+  .textos {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .quadro1 {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+
+/* Botão meditação */
+.botao_meditacao {
+  color: #004456;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sugestao_gif {
+  width: 100%;          /* já tá ótimo pra responsividade */
+  height: auto;         /* mantém a proporção */
+  padding: 20px;
+  border-radius: 10px;
+  /* Sugestões extras: */
+  display: block;       /* remove espaçamento embaixo do vídeo */
+  object-fit: cover;    /* ajusta o vídeo para cobrir o espaço, pode cortar um pouco, se quiser fill */
+  max-height: 400px;    /* limite máximo de altura para não ficar gigante em telas grandes, ajuste conforme precisar */
+}

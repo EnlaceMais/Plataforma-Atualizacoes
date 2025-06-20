@@ -12,8 +12,8 @@ import Foto10 from '../imagem/urso.png'
 import Foto11 from '../imagem/curtir.png'
 import Foto12 from '../imagem/comentar.png'
 import Foto13 from '../imagem/bola2.png'
-import Vector from '../imagem/vector.png'
-import Vector1 from '../imagem/vector.png'
+import Vector from '../imagem/vector3.png'
+import Vector1 from '../imagem/vector3.png'
 import { Link, useLocation } from 'react-router-dom';
 
 function PerfilComponente() {
