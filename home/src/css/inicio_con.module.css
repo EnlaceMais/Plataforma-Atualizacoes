@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #FFF3D5;
+    width: 100%;
+    height: 100vh; /* tela cheia vertical */
+}
+
+.conteudo {
+    width: 100%;
+    height: 100vh; /* tela cheia vertical */
+    background-color: #FFF3D5;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Menu lateral fixo */
+.menu {
+    width: 250px;  /* largura fixa */
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #FFF3D5; /* ou cor que quiser */
+}
+
+/* Container para chat ocupar resto da tela */
+.chatContainer {
+    flex-grow: 1; 
+    height: 100vh;
+    overflow-y: auto;
+}

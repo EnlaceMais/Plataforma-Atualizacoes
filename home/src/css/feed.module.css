@@ -280,7 +280,6 @@
   padding: 5px 15px;
   text-align: center;
   cursor: pointer;
-  margin-bottom: 1rem;
   border: 3px solid #0b3c49;
   width: 85%;
   height: 250px;
@@ -303,14 +302,13 @@
 .modalPostar {
   background: #0b3c49;
   color: #FFEBB8;
-  padding: 15px 15px;
+  padding: 10px;
   font-size: 18px;
   font-weight: 600;
   border-radius: 50px;
   border: none;
   cursor: pointer;
   width: 70%;
-  margin-bottom: 10px;
 }
 
 .modalPostar:disabled {
@@ -389,7 +387,7 @@
   cursor: pointer;
   gap: 15px;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: -10px;
   display: inline-flex;
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -557,11 +555,12 @@
   height: 420px;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .foto img{
-  width: 820px;
-  height: 420px;
+  width: 100%;
+  height: auto;
 }
 .reacao{
   width: 100%;
@@ -761,17 +760,18 @@
 }
 
 .nome1 {
-    width: 190px;
+    width: 180px;
     height: 30px;
-    background-color: #004456;
+    background-color: rgba(129, 199, 217, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 20px;
-    color: white;
-    font-weight: bold;
+    color: #004456;
+    font-weight: 600;
     margin-bottom: 10px;
+    font-size: 15px;
 }
 
 

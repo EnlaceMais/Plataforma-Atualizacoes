@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.menu {
+    width: 35%;
+    height: 100%;
+    background-color: #FFF9EA;
+    margin-top: var(--header-height);
+    left: 0;
+    z-index: 999;
+    /* Garante que fique abaixo da header mas acima do conteúdo */
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.volt1 {
+    padding-top: 40px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.volt3 {
+    width: 220px;
+    height: 60px;
+    border-radius: 25px;
+    background-color: #004456;
+    color: #FFFF;
+    cursor: pointer;
+    border: none;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+
+.voltar {
+    padding-bottom: 5px;
+    padding-right: 15px;
+}
+
+.nominho {
+    color: #004456;
+    font-size: 45px;
+    font-family: 'poppins';
+    font-weight: bold;
+    text-align: left;
+    padding-left: 54px;
+    padding-top: 15px;
+}
+
+.linha {
+    width: 90%;
+    margin: auto;
+    height: 5px;
+    background-color: rgba(129, 199, 217, 0.5);
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.centro {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.caix1 {
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.con1 {
+    width: 100%;
+    height: 100px;
+    background-color: #FFF9EA;
+    border-radius: 50px;
+    border: 2px solid #004456;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.active {
+    background-color: #004456;
+    border-color: #004456;
+}
+
+.active h3,
+.active p {
+    color: #FFF9EA;
+}
+
+
+.f1 {
+    width: auto;
+    height: 80px;
+}
+
+.desc1 {
+    width: 70%;
+    height: 70px;
+}
+
+.letri1 {
+    font-size: 25px;
+    font-family: 'poppins';
+    color: #004456;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.letri2 {
+    font-size: 11px;
+    font-family: 'poppins';
+    color: #004456;
+    margin: 0;
+    padding-top: 1px;
+}
+
+/* MOBILE: até 768px */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: 82vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    .volt3 {
+        width: 80%;
+        font-size: 28px;
+    }
+
+    .nominho {
+        font-size: 32px;
+        padding-left: 30px;
+    }
+
+    .con1 {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+    }
+
+    .desc1 {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .letri1 {
+        font-size: 18px;
+    }
+
+    .letri2 {
+        font-size: 10px;
+    }
+}
+
+/* TABLET: entre 769px e 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .volt3 {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .nominho {
+        font-size: 36px;
+        padding-left: 40px;
+    }
+
+    .letri1 {
+        font-size: 22px;
+    }
+
+    .letri2 {
+        font-size: 12px;
+    }
+}
+
+
