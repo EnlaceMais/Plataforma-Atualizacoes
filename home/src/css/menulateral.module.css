@@ -146,30 +146,59 @@
   scroll-behavior: smooth;
 }
 
-/* Esconde scrollbar padrão em WebKit */
-.scrollContainer::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
 
+@media (max-width: 768px) {
+  .menu {
+    width: 80px;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Scrollbar personalizada só no hover */
-.scrollContainer:hover::-webkit-scrollbar {
-  width: 10px;
-  background: transparent;
-}
+  .usuario {
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+  }
 
-.scrollContainer:hover::-webkit-scrollbar-track {
-  background: #FFF9EA;
-  border-radius: 10px;
-}
+  .usuario img {
+    width: 50px;
+    height: 50px;
+  }
 
-.scrollContainer:hover::-webkit-scrollbar-thumb {
-  background: #D8C9A5;
-  border-radius: 10px;
-  border: 2px solid #FFF9EA;
-}
+  .nome {
+    display: none; /* Esconde o nome */
+  }
 
-.scrollContainer:hover::-webkit-scrollbar-thumb:hover {
-  background: #B8A47C;
+  .linha {
+    display: none;
+  }
+
+  .navegacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegar {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .navegar img {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+  }
+
+  .navegar p {
+    display: none; /* Esconde o texto dos links */
+  }
 }

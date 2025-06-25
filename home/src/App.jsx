@@ -15,7 +15,8 @@ import Bras from './componentes/bras';
 import Chacara from './componentes/chacara';
 import Perfil from './componentes/perfil';
 import Conexoes from './componentes/conexoes';
-import Conversa from './componentes/inicio_con';
+import ExerciciosFonte from './componentes/exerciciosFonte'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -43,7 +44,9 @@ function App() {
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/parceiros" element={<Parceiros/>}/>
         <Route path="/recompensas" element={<Recompensas/>}/>
-        <Route path="/conversa/*" element={<Conversa />} />
+        <Route path ="/exercicios" element={<ExerciciosFonte/>}/>
+        
+
       </Routes>
 
     </Router>

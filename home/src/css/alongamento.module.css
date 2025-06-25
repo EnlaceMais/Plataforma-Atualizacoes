@@ -1,0 +1,565 @@
+
+.cards_exercicio {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; 
+  padding: 0 20px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.card_base_exercicio {
+  background-color: #FFF9EA;
+  width: 93%; 
+  height: auto; 
+  margin: auto;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center; 
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+  min-height: 120px;
+  flex-wrap: wrap; 
+}
+
+.card_base_exercicio:hover {
+  transform: translateY(-4px);
+}
+
+.conteudo_exercicio {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.card_texto_exercicio {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.imagem_leve,
+.imagem_moderado,
+.imagem_intenso,
+.imagem_pesinho,
+.imagem_caminhada {
+  height: 100px;
+  width: auto;
+  border-radius: 12px;
+  flex-shrink: 0; /* para não reduzir demais */
+}
+
+.titulo_exercicio {
+  color: #004456;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.descricao_exercicio {
+  color: #004456;
+  font-weight: 500;
+}
+
+/* Botão iniciar exercício */
+.iniciar_exercicio {
+  background-color: #004456;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.iniciar_exercicio:hover {
+  background-color: #00677d;
+}
+
+/* Media queries para telas pequenas */
+@media (max-width: 768px) {
+  .card_base_exercicio {
+    flex-direction: column;
+    gap: 16px;
+    min-height: auto;
+  }
+
+  .iniciar_exercicio {
+    width: 100%;
+    align-self: center;
+  }
+
+  .titulo_exercicio {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .descricao_exercicio {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards_exercicio {
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+
+  .iniciar_exercicio {
+    font-size: 16px;
+    height: 45px;
+  }
+}
+
+/* Tela de detalhes */
+.detalhes {
+  width: 65%;
+  margin: 30px auto;
+  background-color: #FFF9EA;
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 900px; 
+}
+
+.card_info_detalhes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info_card {
+  background-color: #FFFFFF;
+  padding: 16px;
+  border-radius: 16px;
+  border-left: 5px solid #004456;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #004456;
+  margin-bottom: 4px;
+}
+
+.video_area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.video_titulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #004456;
+}
+
+.video_player {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 16px;
+  background-color: #ccc;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+  .detalhes {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .video_player {
+    height: 300px;
+  }
+
+  .video_titulo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detalhes {
+    width: 100%;
+    margin: 15px 10px;
+    padding: 16px;
+    border-radius: 16px;
+    gap: 20px;
+  }
+
+  .video_player {
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .video_titulo {
+    font-size: 16px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+}
+
+.card_concluido {
+  background-color: #E0F7EC;
+  border-radius: 24px;
+  padding: 32px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: aparecer 0.5s ease-in-out;
+}
+
+.card_concluido h3 {
+  font-size: 24px;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.card_concluido p {
+  font-size: 18px;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card_motivacional {
+  background-color: #fff9ea;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 24px;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.card_motivacional h3 {
+  color: #004456;
+  margin-bottom: 8px;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .card_concluido {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .card_concluido h3 {
+    font-size: 20px;
+  }
+
+  .card_concluido p {
+    font-size: 16px;
+  }
+
+  .card_motivacional {
+    padding: 16px;
+    margin: 20px 10px;
+  }
+
+  .card_motivacional h3 {
+    font-size: 18px;
+  }
+}
+
+.botoes_finais {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap; /* para quebrar em linha nova se não couber */
+}
+
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid #004456;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #004456;
+  font-weight: bold;
+  cursor: pointer;
+  flex: 1 1 auto;
+  max-width: 200px;
+  text-align: center;
+}
+
+.botao_secundario:hover {
+  background-color: #004456;
+  color: #fff;
+}
+
+.card_audio_explicacao {
+  background-color: #e0f0f4;
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  color: #004456;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  flex-wrap: wrap; /* para ficar responsivo */
+  gap: 10px;
+}
+
+.botao_ouvir_audio {
+  background-color: #004456;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.botao_ouvir_audio:disabled {
+  background-color: #7a9aa3;
+  cursor: not-allowed;
+}
+
+.mensagem_audio_finalizado {
+  margin: 12px 0 20px;
+  padding: 12px 20px;
+  background-color: #d0f0e0;
+  color: #006644;
+  font-weight: 600;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.area_botao_voltar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.botao_voltar {
+  background-color: #004456;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 30%;
+  height: auto;
+  max-width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .botoes_finais {
+    gap: 12px;
+  }
+  .botao_secundario {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .card_audio_explicacao {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .botao_ouvir_audio {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+  .botao_voltar {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.resultados_container {
+  width: 60%;
+  height: auto;
+  margin: 40px auto 2rem auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fff8e6;
+  box-sizing: border-box;
+}
+
+/* Textos */
+.resultados_tempo {
+  color: #004456;
+  font-weight: bold;
+}
+
+
+.recompensa_texto {
+  color: #fff;
+  font-size: 15px;
+}
+
+.resultados_titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #004456;
+}
+
+.resultados_mensagem {
+  font-weight: 400;
+  font-size: 20px;
+  color: #004456;
+  margin-bottom: 0.5rem;
+}
+
+/* Barras de progresso */
+.progresso_barras {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.barra {
+  width: 30px;
+  height: 30px;
+  background-color: #cde7e5;
+  border-radius: 6px;
+}
+
+.ativa {
+  background-color: #3ccfcf;
+}
+
+/* Card recompensa */
+.recompensa_card {
+  background-color: #004456;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+/* Ícone moeda */
+.moeda_icone {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+/* Imagens */
+.imagem_intenso,
+.imagem_moderado,
+.imagem_leve,
+.imagem_pesinho,
+.imagem_caminhada {
+  width: 140px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .resultados_container {
+    width: 90%;
+    margin: 20px auto 2rem auto;
+    padding: 1rem;
+  }
+  .resultados_mensagem {
+    font-size: 18px;
+  }
+  .progresso_barras {
+    justify-content: space-around;
+  }
+  .barra {
+    width: 25px;
+    height: 25px;
+  }
+  .recompensa_card {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+  .moeda_icone {
+    width: 60px;
+  }
+  .imagem_intenso,
+  .imagem_moderado,
+  .imagem_leve,
+  .imagem_pesinho,
+  .imagem_caminhada {
+    width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resultados_container {
+    width: 95%;
+    margin: 15px auto 1.5rem auto;
+    padding: 0.8rem;
+  }
+  .resultados_titulo {
+    font-size: 1.2rem;
+  }
+  .resultados_mensagem {
+    font-size: 16px;
+  }
+  .progresso_barras {
+    gap: 6px;
+  }
+  .barra {
+    width: 20px;
+    height: 20px;
+  }
+  .recompensa_card {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+  .moeda_icone {
+    width: 50px;
+  }
+  .imagem_intenso,
+  .imagem_moderado,
+  .imagem_leve,
+  .imagem_pesinho,
+  .imagem_caminhada {
+    width: 90px;
+  }
+}
+
+
+
+
+
+
+
+

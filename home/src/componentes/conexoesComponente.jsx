@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Styles from '../css/conexoesComponente.module.css';
-import Vector from '../imagem/Vector.png';
+import Vector from '../imagem/vector.png';
 import Vector2 from '../imagem/vector2.png';
 import foto1 from '../imagem/foto_conexoes1.png';
 import foto2 from '../imagem/foto_conexoes2.png';

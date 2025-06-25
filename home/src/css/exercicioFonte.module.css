@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    background-color: #FFF3D5;
+    width: 100%;
+    height: auto;
+}
+
+.conteudo{
+    width: 100%;
+    height: auto;
+    background-color: #FFF3D5;
+    display: flex;
+    flex-direction: row;
+}
