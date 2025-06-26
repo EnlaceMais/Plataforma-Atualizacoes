@@ -1,0 +1,107 @@
+.menu{
+    width: 35%;
+    height: calc(100vh - 150px);
+    background-color: #FFF9EA;
+    margin-top: var(--header-height);
+    left: 0;
+    z-index: 999; /* Garante que fique abaixo da header mas acima do conteúdo */
+    position: fixed;
+}
+
+
+.usuario{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.usuario img{
+    width: 110px;
+    height: 110px;
+}
+.nome{
+    font-family: 'Poppins';
+    font-size: 30px;
+    margin-left: -50px;
+    color: #004456;
+    font-weight: 600;
+}
+.linha{
+    width: 90%;
+    margin: auto;
+    height: 5px;
+    background-color: rgba(129, 199, 217, 0.5);
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.navegacao {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.navegar{
+    width: 85%;
+    height: 60px;
+    background-color: rgba(129, 199, 217, 0.5);
+    border-radius: 50px;
+    margin: auto;
+    transition: all .7s;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+
+}
+.navegar:hover{
+    background-color: rgba(129, 199, 217, 1);
+    transform: scale(1.05);
+}
+.navegar img{
+    margin-left: 25px;
+}
+
+.perfil{
+    width: 10%;
+    height: auto;
+}
+.home{
+    width: 9%;
+    height: auto;
+}
+.grupo{
+    width: 11%;
+    height: auto;
+}
+.jogos{
+    width: 10%;
+    height: auto;
+}
+.calendario{
+    width: 9%;
+    height: auto;
+}
+.pesinho{
+    width: 10%;
+    height: auto;
+}
+.cupom{
+    width: 10%;
+    height: auto;
+}
+.medalha{
+    width: 10%;
+    height: auto;
+}
+.navegar p{
+    color: #004456;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    padding: 15px 20px 0 35px;
+}
