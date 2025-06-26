@@ -134,6 +134,7 @@
     color:#004456;
     display: flex;
     margin-left: 50px;
+    cursor: pointer;
 }
 .texto2{
     margin-left: 50px;
@@ -149,7 +150,8 @@
     font-size: 19px;
     font-weight: 500;
 }
-/* ===== Modal ===== */
+
+/* Modal */
 .modalOverlay {
   position: fixed;
   inset: 0;
@@ -239,6 +241,7 @@
   font-weight: 600;
   color: #004456;
   margin-left: 45px;
+  font-family: 'Poppins';
 }
 .modalTexto::placeholder {
   font-weight: 600;
@@ -309,6 +312,11 @@
   border: none;
   cursor: pointer;
   width: 70%;
+<<<<<<< HEAD
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+=======
+>>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 }
 
 .modalPostar:disabled {
@@ -319,14 +327,8 @@
 .modalPostar:hover:not(:disabled) {
   background: #095063;
 }
-.videoCamera {
-  width: 100%;
-  border-radius: 8px;
-  background-color: black;
-  margin: 15px 0;
-  display: block;
-  object-fit: cover;
-}
+
+/* Câmera */
 .cameraOverlay {
   position: fixed;
   top: 0;
@@ -334,9 +336,6 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0.75);
-  background-color: rgba(0, 0, 0, 0.5); /* preta semi-transparente */
-  backdrop-filter: blur(8px); /* aplica o efeito blur no que estiver atrás */
-  -webkit-backdrop-filter: blur(8px); /* para suporte Safari */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,13 +373,14 @@
 }
 
 .cameraButton:hover {
-  background-color: #004456;
+  background-color: #095063;
 }
+
 .botao4 {
-  background-color: #FFEBB8; /* amarelo suave, destaque */
-  color: #004456; /* texto escuro para contraste */
+  background-color: #FFEBB8;
+  color: #004456;
   border: none;
-  border-radius: 25px; /* borda arredondada */
+  border-radius: 25px;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
@@ -392,11 +392,12 @@
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins';
 }
 
 .botao4:hover,
 .botao4:focus {
-  background-color: #FFEBB8; /* amarelo mais escuro */
+  background-color: #FFEBB8;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   outline: none;
 }
@@ -408,7 +409,7 @@
   box-shadow: none;
 }
 
-
+/* Postagens */
 .quadro3{
   width: 85%;
   height: 550px;
@@ -416,6 +417,7 @@
   background-color: #FFF9EA;
   margin: 50px auto;
 }
+
 .textoInicio{
   width: 100%;
   height: 70px;
@@ -425,6 +427,7 @@
   padding-top: 35px;
   padding-left: 15px;
 }
+
 .textoInicio img{
   width: 60px;
   height: 45px;
@@ -450,119 +453,104 @@
   justify-content: space-around;
   gap: 15px;
 }
+
 .card1{
   width: 230px;
   height: 340px;
   background-color: #FFF3D5;
   border-radius: 15px;
 }
-.rodape{
-    width: 100%;
-    height: 150px;
-    margin: 120px auto 0px;
-    border-top: #004456 solid 2.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-}
-.rodape p{
-    font-size: 16px;
-    color: #004456;
-    font-weight: 600;
-}
-.links{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-}
-.links a{
-    text-decoration: none;
-    color:#004456;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-.links a:hover{
-    text-decoration-line: underline;
-}
 
-.quadro4{
+/* Postagens */
+.quadro4 {
   width: 85%;
-  height: 720px;
+  min-height: 200px;
   border-radius: 15px;
   background-color: #FFF9EA;
   margin: 50px auto;
   font-family: 'Poppins';
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  
+  padding: 20px;
 }
-.perfil{
+
+.postagem {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #FFF9EA;
+  margin-bottom: 30px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil {
   width: 100%;
   height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.perfil img{
-  width: 10%;
-  height: auto;
-  margin-top: 35px;
-  margin-left: 35px;
+
+.perfil img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
-.infoUser{
+
+.infoUser {
   height: 50px;
-  margin-top: 15px;
-  margin-left: 35px;
 }
-.infoUser h5{
+
+.infoUser h5 {
   font-size: 25px;
   font-weight: 600;
   color: #004456;
+  margin: 0;
 }
-.infoUser p{
+
+.infoUser p {
   font-size: 18px;
   font-weight: 500;
   color: #004456;
-}
-.descricao{
-  width: 100%;
-  height: 80px;
-  margin-top: 15px;
-  color: #004456;
-}
-.descricao p{
-  font-weight: 500;
-  font-size: 19px;
-  margin-left: 35px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.descricao p:hover{
-  font-weight: 600;
-}
-.descricao h5{
-  font-weight: 500;
-  font-size: 19px;
-  margin-left: 35px;
-  margin-top: 15px;
+  margin: 5px 0 0 0;
 }
 
-.foto{
+.descricao {
   width: 100%;
-  height: 420px;
+  margin: 15px 0;
+  color: #004456;
+}
+
+.descricao h5 {
+  font-weight: 500;
+  font-size: 19px;
+  margin: 0;
+}
+
+.foto {
+  width: 100%;
+  margin: 15px 0;
   display: flex;
   justify-content: center;
+<<<<<<< HEAD
+  overflow: hidden;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+=======
   margin: auto;
 }
 
 .foto img{
   width: 100%;
   height: auto;
+>>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 }
-.reacao{
+
+.reacao {
   width: 100%;
   height: 50px;
   display: flex;
@@ -584,6 +572,7 @@
   user-select: none;
   transition: filter 0.3s ease, transform 0.15s ease;
 }
+
 .coment {
   width: 220px;
   height: 65px;
@@ -623,12 +612,15 @@
   color: #004456 !important;
   transform: scale(1.1);
 }
+
 .liked img {
   filter: none !important;
 }
+
 .liked p {
   color: #004456 !important;
 }
+
 .commented {
   filter: none !important;
   color: #004456 !important;
@@ -642,18 +634,18 @@
 .commented p {
   color: #004456 !important;
 }
+
+/* Amigos */
 .quadro5{
   width: 85%;
-  height: 720px;
+  min-height: 200px;
   border-radius: 15px;
   background-color: #FFF9EA;
   margin: 50px auto;
   font-family: 'Poppins';
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  
+  padding: 20px;
 }
+
 .cardAmigo {
   background-color: #fff9ea;
   border-radius: 12px;
@@ -678,6 +670,55 @@
   font-weight: bold;
 }
 
+<<<<<<< HEAD
+/* Rodapé */
+.rodape{
+  width: 100%;
+  height: 150px;
+  margin: 120px auto 0px;
+  border-top: #004456 solid 2.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.rodape p{
+  font-size: 16px;
+  color: #004456;
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+
+.links{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.links a{
+  text-decoration: none;
+  color:#004456;
+  font-weight: 500;
+  transition: all 0.2s;
+  font-family: 'Poppins';
+}
+
+.links a:hover{
+  text-decoration-line: underline;
+}
+
+/* Loader */
+.carregando {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #004456;
+  font-family: 'Poppins';
+}
+=======
 
 .conexoes {
     width: 100%;
@@ -902,3 +943,4 @@
 
 
 
+>>>>>>> 7438b162e71798a6074757e82b988b66218e3126
