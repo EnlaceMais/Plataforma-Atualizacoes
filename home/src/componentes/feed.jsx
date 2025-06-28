@@ -5,17 +5,7 @@ import grupo from '../imagem/grupo.png';
 //import fotoPerfil from '../imagem/foto_perfil.png';
 import like from '../imagem/like.png';
 import coment from '../imagem/coment.png';
-<<<<<<< HEAD
 import perfil from '../imagem/pessoas.png';
-=======
-import foto1 from '../imagem/foto_conexoes1.png';
-import foto2 from '../imagem/foto_conexoes2.png';
-import foto3 from '../imagem/foto_conexoes3.png';
-import foto4 from '../imagem/foto_conexoes4.png';
-import foto5 from '../imagem/foto_conexoes5.png';
-import foto6 from '../imagem/foto_conexoes6.png';
-import foto7 from '../imagem/foto_conexoes7.png';
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile, faCamera, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -160,70 +150,6 @@ function Feed() {
         return data.toLocaleString('pt-BR', { dateStyle: 'medium', timeStyle: 'short' });
     }
 
-<<<<<<< HEAD
-=======
-    const [indiceAtual, setIndiceAtual] = useState(0);
-
-    const [pedidos, setPedidos] = useState([
-            { nome: 'Otávio Costa', foto: foto1 },
-            { nome: 'Maria José', foto: foto2 },
-            { nome: 'Robson Alves', foto: foto3 },
-            { nome: 'Tereza Silva', foto: foto4 }
-        ]);
-    
-        const [amigos, setAmigos] = useState([
-            { nome: 'José Lima', foto: foto5 },
-            { nome: 'Jair Barros', foto: foto6 },
-            { nome: 'Nilda Santos', foto: foto7 },
-        ]);
-    
-        const itemsPorTela = 3;
-    
-        const [indexPedidos, setIndexPedidos] = useState(0);
-        const [indexAmigos, setIndexAmigos] = useState(0);
-    
-        const totalPedidos = pedidos.length;
-        const totalAmigos = amigos.length;
-    
-        const nextPedidos = () => setIndexPedidos((indexPedidos + 1) % totalPedidos);
-        const prevPedidos = () => setIndexPedidos((indexPedidos - 1 + totalPedidos) % totalPedidos);
-    
-        const nextAmigos = () => setIndexAmigos((indexAmigos + 1) % totalAmigos);
-        const prevAmigos = () => setIndexAmigos((indexAmigos - 1 + totalAmigos) % totalAmigos);
-    
-        const visiveisPedidos = [];
-        for (let i = 0; i < Math.min(itemsPorTela, totalPedidos); i++) {
-            visiveisPedidos.push(pedidos[(indexPedidos + i) % totalPedidos]);
-        }
-    
-        const visiveisAmigos = [];
-        for (let i = 0; i < Math.min(itemsPorTela, totalAmigos); i++) {
-            visiveisAmigos.push(amigos[(indexAmigos + i) % totalAmigos]);
-        }
-    
-        const excluirPedido = (nome) => {
-            const novosPedidos = pedidos.filter(p => p.nome !== nome);
-            setPedidos(novosPedidos);
-            if (indexPedidos >= novosPedidos.length && novosPedidos.length > 0) {
-                setIndexPedidos(0);
-            }
-        };
-    
-        const confirmarPedido = (pessoa) => {
-            setAmigos([...amigos, pessoa]);
-            excluirPedido(pessoa.nome);
-        };
-    
-        const desconectarAmigo = (nome) => {
-            const novosAmigos = amigos.filter(a => a.nome !== nome);
-            setAmigos(novosAmigos);
-            if (indexAmigos >= novosAmigos.length && novosAmigos.length > 0) {
-                setIndexAmigos(0);
-            }
-        };
-
-   
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
     return (
         <section className={Styles.feed}>
             <div className={Styles.quadro1}>
@@ -326,7 +252,6 @@ function Feed() {
             )}
 
             <div className={Styles.quadro3}>
-<<<<<<< HEAD
                 <div className={Styles.textoInicio}><img src={grupo} alt='comunidade' /><h2>Amigos para conhecer</h2></div>
                 <div className={Styles.carrossel}>
                     <div className={Styles.card1}></div>
@@ -371,70 +296,6 @@ function Feed() {
                     ))
                 )}
             </div>
-=======
-                <div className={Styles.textoInicio}>
-                    <img src={grupo} alt='comunidade' />
-                    <h2>Amigos para conhecer</h2>
-                </div>
-                <div className={Styles.carousel}>
-                                    <button className={Styles.seta} onClick={prevPedidos} disabled={pedidos.length === 0}>◀</button>
-                                    <div className={Styles.carouselContainer}>
-                                        {visiveisPedidos.map((pessoa) => (
-                                            <div key={pessoa.nome} className={Styles.idoso1}>
-                                                <img className={Styles.foto1} src={pessoa.foto} alt={pessoa.nome} />
-                                                <h3 className={Styles.nome}>{pessoa.nome}</h3>
-                                                <div className={Styles.space}>
-                                                    <a className={Styles.nome1} href="#" onClick={(e) => { e.preventDefault(); confirmarPedido(pessoa); }}>Adicionar aos amigos</a>
-                                                    
-                                                </div>
-                                            </div>
-                                        ))}
-                                        {pedidos.length === 0 && <p>Sem pedidos pendentes</p>}
-                                    </div>
-                                    <button className={Styles.seta} onClick={nextPedidos} disabled={pedidos.length === 0}>▶</button>
-                                </div>
-            </div>
-
-            <div className={Styles.quadro4}>
-                <div className={Styles.perfil}>
-                    <img src={fotoPerfil} alt='foto de perfil' />
-                    <div className={Styles.infoUser}>
-                        <h5>Elizabete Souza</h5>
-                        <p>29 de janeiro, 2025</p>
-                    </div>
-                </div>
-                <div className={Styles.descricao}>
-                    <h5>Um dia com os meus netinhos lindos.</h5>
-                    <p>#familia #amem #enlacemais</p>
-                </div>
-                <div className={Styles.foto}>
-                    <img src={post} alt="fotinha" />
-                </div>
-                <div className={Styles.reacao}>
-                    <div
-                        className={`${Styles.like} ${curtido ? Styles.liked : ''}`}
-                        onClick={toggleCurtir}
-                        role="button"
-                        tabIndex={0}
-                        onKeyDown={(e) => { if (e.key === 'Enter') toggleCurtir(); }}
-                    >
-                        <img src={like} alt='like' />
-                        <p>{curtido ? 'Curtiu' : 'Curtir'}</p>
-                    </div>
-                    <div
-                        className={`${Styles.coment} ${comentado ? Styles.commented : ''}`}
-                        onClick={toggleComentar}
-                        role="button"
-                        tabIndex={0}
-                        onKeyDown={(e) => { if (e.key === 'Enter') toggleComentar(); }}
-                    >
-                        <img src={coment} alt='comentario' />
-                        <p>{comentado ? 'Comentou' : 'Comentar'}</p>
-                    </div>
-                </div>
-            </div>
-            
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 
             <div className={Styles.quadro5}></div>
             

@@ -98,7 +98,7 @@ function Conversa_fs() {
           <div className={Styles.acima}>
             <Link to="/menulateral">
               {window.innerWidth <= 768 && (
-                <button className={Styles.botaoVoltar}>
+                 <button className={Styles.botaoVoltar}>
                   <img className={Styles.vol} src={voltar} alt="voltar" />
                 </button>
               )}

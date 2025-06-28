@@ -29,7 +29,7 @@ function Menu() {
     return (
         <main className={Styles.menu}>
             <div className={Styles.volt1}>
-                <a className={Styles.volt2} href="#"><button className={Styles.volt3}><img className={Styles.voltar} src={voltar} alt="voltar" />Voltar</button></a>
+                <a className={Styles.volt2} href="/inicio"><button className={Styles.volt3}><img className={Styles.voltar} src={voltar} alt="voltar" />Voltar</button></a>
             </div>
             <h2 className={Styles.nominho}>Bate-papos</h2>
             <div className={Styles.linha}></div>

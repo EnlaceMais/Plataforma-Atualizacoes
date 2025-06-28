@@ -312,11 +312,8 @@
   border: none;
   cursor: pointer;
   width: 70%;
-<<<<<<< HEAD
   margin-bottom: 10px;
   font-family: 'Poppins';
-=======
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 }
 
 .modalPostar:disabled {
@@ -531,7 +528,6 @@
   margin: 15px 0;
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
   overflow: hidden;
 }
 
@@ -540,14 +536,6 @@
   max-height: 500px;
   object-fit: contain;
   border-radius: 10px;
-=======
-  margin: auto;
-}
-
-.foto img{
-  width: 100%;
-  height: auto;
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
 }
 
 .reacao {
@@ -670,7 +658,6 @@
   font-weight: bold;
 }
 
-<<<<<<< HEAD
 /* Rodapé */
 .rodape{
   width: 100%;
@@ -718,229 +705,3 @@
   color: #004456;
   font-family: 'Poppins';
 }
-=======
-
-.conexoes {
-    width: 100%;
-    height: auto;
-    margin-left: calc(100% - var(--menu-width));
-    margin-top: calc(17.9% - var(--header-height));
-    font-family: poppins;
-}
-
-
-.quadrinho1 {
-    position: absolute;
-    width: 40%;
-    height: 50px;
-    display: flex;
-    margin-top: 25px;
-    margin-right: 180px;
-}
-
-.vector{
-    margin-left: 15px;
-    margin-top: -10px;
-    width: 50px;
-    height: 40px;
-}
-
-.pedidos {
-    margin: auto;
-    margin-left: 18px;
-    font-weight: bold;
-    margin-top: -4px;
-    font-size: 28px;
-}
-
-.idoso1 {
-   width: 34%;
-    height: 365px; 
-    background-color: #FFF3D5;
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-.idoso1 h3{
-    color: #004456;
-    align-self: start;
-    margin-left: 10px;
-}
-.idoso2 h3{
-    color: #004456;
-    align-self: start;
-    margin-left: 10px;
-}
-
-.foto1 {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    object-position: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    flex-shrink: 0;
-}
-
-.nome {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-top: 6px;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.space{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nome1 {
-    width: 180px;
-    height: 30px;
-    background-color: rgba(129, 199, 217, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 20px;
-    color: #004456;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-
-.idoso2 {
-   width: 34%;
-    height: 365px; 
-    background-color: #FFF3D5;
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.quadro2 h1 {
-    color:#004456;
-    font-size: 27px;
-}
-
-.quadrinho2 {
-    position: absolute;
-    width: 40%;
-    height: 50px;
-    display: flex;
-    margin-top: 25px;
-    margin-right: 210px;
-}
-
-.space2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.chat{
-    width: 27px;
-    height: 27px;
-    margin-left: -5px;
-}
-
-.calen{
-    width: 27px;
-    height: 27px;
-    margin-right: 35px;
-}
-
-.nome3 {
-    width: 170px;
-    height: 30px;
-    background-color: #E66625;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-}
-
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    margin-top: 60px;
-}
-
-.carousel2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 10px;
-    margin-top: 80px;
-}
-
-.seta {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #E66625;
-    transition: transform 0.2s ease;
-}
-
-.seta:hover {
-    transform: scale(1.2);
-}
-
-.carouselContainer {
-    display: flex;
-    gap: 20px;
-    width: 85%;
-    justify-content: center;
-}
-.rodape{
-    width: 100%;
-    height: 150px;
-    margin: 120px auto 0px;
-    border-top: #004456 solid 2.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.8;
-}
-.rodape p{
-    font-size: 16px;
-    color: #004456;
-    font-weight: 600;
-}
-.links{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-}
-.links a{
-    text-decoration: none;
-    color:#004456;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-.links a:hover{
-    text-decoration-line: underline;
-}
-
-
-
->>>>>>> 7438b162e71798a6074757e82b988b66218e3126
