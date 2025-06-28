@@ -146,15 +146,6 @@ function Jogos() {
           </div>
         </div>
       )}
-
-      <footer className={Styles.rodape}>
-        <p>© 2025 Enlace+ - Todos os direitos reservados</p>
-        <div className={Styles.links}>
-          <a href='#'>Termo de uso</a>
-          <a href='#'>Privacidade</a>
-          <a href='#'>Ajuda</a>
-        </div>
-      </footer>
     </section>
   );
 }
