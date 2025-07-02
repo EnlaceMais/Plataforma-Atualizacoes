@@ -28,7 +28,12 @@ function Feed() {
     useEffect(() => {
         setCarregando(true);
         fetch(`${BACKEND_URL}/postagens`)
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`Erro HTTP! status: ${res.status}`);
+                }
+                return res.json();
+            })
             .then(data => {
                 setPostagens(data.reverse());
                 setCarregando(false);
