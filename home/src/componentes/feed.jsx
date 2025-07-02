@@ -23,9 +23,11 @@ function Feed() {
     const videoRef = useRef(null);
     const streamRef = useRef(null);
 
+    const BACKEND_URL = 'https://1268-190-115-64-20.ngrok-free.app';
+
     useEffect(() => {
         setCarregando(true);
-        fetch('https://d7ca-190-115-64-20.ngrok-free.app')
+        fetch(`${BACKEND_URL}/postagens`)
             .then(res => res.json())
             .then(data => {
                 setPostagens(data.reverse());
@@ -121,7 +123,7 @@ function Feed() {
         formData.append('imagem', arquivoSelecionado);
 
         try {
-            const response = await fetch('https://d7ca-190-115-64-20.ngrok-free.app', {
+            const response = await fetch(`${BACKEND_URL}/postagens`, {
                 method: 'POST',
                 body: formData,
             });
@@ -280,7 +282,7 @@ function Feed() {
                             </div>
                             <div className={Styles.foto}>
                                 <img 
-                                    src={`https://d7ca-190-115-64-20.ngrok-free.app/imagens/${post.imagem}`} 
+                                    src={`${BACKEND_URL}/imagens/${post.imagem}`} 
                                     alt="post" 
                                 />
                             </div>
