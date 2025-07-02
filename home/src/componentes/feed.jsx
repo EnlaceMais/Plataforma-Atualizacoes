@@ -25,7 +25,7 @@ function Feed() {
 
     useEffect(() => {
         setCarregando(true);
-        fetch('http://localhost:8080/postagens')
+        fetch('https://d7ca-190-115-64-20.ngrok-free.app')
             .then(res => res.json())
             .then(data => {
                 setPostagens(data.reverse());
@@ -121,7 +121,7 @@ function Feed() {
         formData.append('imagem', arquivoSelecionado);
 
         try {
-            const response = await fetch('http://localhost:8080/postagens', {
+            const response = await fetch('https://d7ca-190-115-64-20.ngrok-free.app', {
                 method: 'POST',
                 body: formData,
             });
@@ -280,7 +280,7 @@ function Feed() {
                             </div>
                             <div className={Styles.foto}>
                                 <img 
-                                    src={`http://localhost:8080/imagens/${post.imagem}`} 
+                                    src={`https://d7ca-190-115-64-20.ngrok-free.app/imagens/${post.imagem}`} 
                                     alt="post" 
                                 />
                             </div>
