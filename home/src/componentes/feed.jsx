@@ -26,23 +26,41 @@ function Feed() {
     const BACKEND_URL = 'https://1268-190-115-64-20.ngrok-free.app';
 
     useEffect(() => {
-        setCarregando(true);
-        fetch(`${BACKEND_URL}/postagens`)
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error(`Erro HTTP! status: ${res.status}`);
-                }
+    setCarregando(true);
+    fetch(`${BACKEND_URL}/postagens`,{
+        method: 'GET',
+        headers: {
+            "ngrok-skip-browser-warning": "true",
+            "Content-Type": "application/json"
+        }
+    })
+        .then(res => {
+            console.log('Tipo de resposta:', res.headers.get('content-type'));
+            if (!res.ok) {
+                throw new Error(`Erro HTTP! status: ${res.status}`);
+            }
+            // Verifica se a resposta é JSON mesmo
+            const tipo = res.headers.get('content-type') || '';
+            if (tipo.includes('application/json')) {
                 return res.json();
-            })
-            .then(data => {
-                setPostagens(data.reverse());
-                setCarregando(false);
-            })
-            .catch(err => {
-                console.error('Erro ao buscar postagens:', err);
-                setCarregando(false);
-            });
-    }, []);
+            } else {
+                return res.text().then(text => {
+                    console.error('Resposta bruta da API:', text);
+                    throw new Error('Resposta não é JSON!');
+                });
+            }
+        })
+        .then(data => {
+            console.log('Postagens recebidas:', data);
+            setPostagens(data.reverse());
+            setCarregando(false);
+        })
+        .catch(err => {
+            console.error('Erro ao buscar postagens:', err);
+            setCarregando(false);
+        });
+}, []);
+
 
     useEffect(() => {
         if (modalAberto) {
@@ -195,11 +213,11 @@ function Feed() {
                         </button>
                         <div className={Styles.modalHeader}><h2>Fazer uma postagem</h2><div className={Styles.linha}></div></div>
                         <div className={Styles.modalUser}><img src={foto} alt="Usuária" /><div><strong>Maria Antônia</strong></div></div>
-                        <textarea 
-                            className={Styles.modalTexto} 
-                            placeholder="Compartilhe algo hoje, Maria!" 
-                            value={mensagem} 
-                            onChange={(e) => setMensagem(e.target.value)} 
+                        <textarea
+                            className={Styles.modalTexto}
+                            placeholder="Compartilhe algo hoje, Maria!"
+                            value={mensagem}
+                            onChange={(e) => setMensagem(e.target.value)}
                         />
 
                         <div className={Styles.modalUpload2}>
@@ -209,8 +227,8 @@ function Feed() {
                                 <input type="file" id="inputModalFoto" style={{ display: 'none' }} accept="image/*" onChange={handleArquivoChange} />
 
                                 {!cameraAtiva && (
-                                    <button 
-                                        className={Styles.botao4} 
+                                    <button
+                                        className={Styles.botao4}
                                         onClick={(e) => { e.stopPropagation(); abrirCamera(); }}
                                     >
                                         <FontAwesomeIcon icon={faCamera} /> Tire uma foto
@@ -236,10 +254,10 @@ function Feed() {
                             </div>
                         </div>
 
-                        <button 
-                            className={Styles.modalPostar} 
-                            onClick={handleSubmit} 
-                            disabled={!mensagem.trim() || !arquivoSelecionado} 
+                        <button
+                            className={Styles.modalPostar}
+                            onClick={handleSubmit}
+                            disabled={!mensagem.trim() || !arquivoSelecionado}
                             style={{ marginTop: '1.5rem' }}
                         >
                             Postar
@@ -286,9 +304,9 @@ function Feed() {
                                 <h5>{post.contexto}</h5>
                             </div>
                             <div className={Styles.foto}>
-                                <img 
-                                    src={`${BACKEND_URL}/imagens/${post.imagem}`} 
-                                    alt="post" 
+                                <img
+                                    src={`${BACKEND_URL}/imagens/${post.imagem}`}
+                                    alt="post"
                                 />
                             </div>
                             <div className={Styles.reacao}>
@@ -305,7 +323,7 @@ function Feed() {
             </div>
 
             <div className={Styles.quadro5}></div>
-            
+
             <footer className={Styles.rodape}>
                 <p>© 2025 Enlace+ - Todos os direitos reservados</p>
                 <div className={Styles.links}>
